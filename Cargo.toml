@@ -1,0 +1,21 @@
+[package]
+name = "gestalt_hal_nrf52840"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+panic-halt = "*"
+cortex-m = "*"
+cortex-m-rt = "*"
+num-derive = "*"
+nrf52840 = "*"
+
+[dependencies.num-traits]
+default-features = false
+version = "*"
+
+[dependencies.gestalt_reference_api]
+path = "../gestalt_reference_api"
+
